@@ -10,10 +10,12 @@ body {
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     & img {
         width: 150px;
         margin-top: 3rem;
-        margin-left: 6rem;
     }
 }
 
@@ -38,6 +40,13 @@ aside{
         font-size: 17px;
         margin-bottom: 1rem;
         text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    & .titled {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     & .clickbutton {    
@@ -49,7 +58,6 @@ aside{
         text-decoration: none;
         text-align: center;
         padding: 5px 30px;
-        margin-left: 3rem;
         transition: background-color 0.3s ease;
     }
 
@@ -58,52 +66,226 @@ aside{
     }
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 800px) {
 
     nav {
         position: relative;
+        justify-content: right;
+        align-items: right;
+        margin-right: 35%;
     }
 
     nav img {
-        width: 350px;
-        margin-top: 18rem;
+        width: 250px;
+        margin-top: 7rem;
         position: absolute;
-        right: 25rem;
     }
 
     main {
-        display: grid;
-        grid-template-columns: repeat(1fr, 1fr);
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        padding-left: 10%;
 
         & aside {
-            padding: 2rem;
-            margin-top: 15rem;
+            margin-top: 10%;
         }
 
         & .titlea {
-            font-size: 35px;
-            margin-left: 33rem;
+            font-size: 25px;
+            text-align: left;
+        }
+
+        & .titleb {
+            font-size: 18px;
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        & .titlec {
+            font-size: 18px;
+            text-align: left;
+            margin-bottom: 3rem;
+        }
+
+        & .titled {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+        }
+
+        & .clickbutton {
+            font-size: 18px;
+            padding: 10px 50px;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+
+    nav {
+        position: relative;
+        justify-content: right;
+        align-items: right;
+        margin-right: 40%;
+    }
+
+    nav img {
+        width: 280px;
+        margin-top: 8rem;
+        position: absolute;
+    }
+
+    main {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        padding-left: 15%;
+
+        & aside {
+            margin-top: 10%;
+        }
+
+        & .titlea {
+            font-size: 25px;
+            text-align: left;
+        }
+
+        & .titleb {
+            font-size: 18px;
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        & .titlec {
+            font-size: 18px;
+            text-align: left;
+            margin-bottom: 3rem;
+        }
+
+        & .titled {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+        }
+
+        & .clickbutton {
+            font-size: 18px;
+            padding: 10px 50px;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1280px) {
+
+    nav {
+        position: relative;
+        justify-content: right;
+        align-items: right;
+        margin-right: 40%;
+    }   
+
+    nav img {
+        width: 300px;
+        margin-top: 9rem;
+        position: absolute;
+    }
+
+    main {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        padding-left: 20%;
+
+        & aside {
+            margin-top: 10%;
+        }
+
+        & .titlea {
+            font-size: 30px;
             text-align: left;
         }
 
         & .titleb {
             font-size: 20px;
-            margin-left: 33rem;
             text-align: left;
             margin-bottom: 1.5rem;
         }
-        
+
         & .titlec {
             font-size: 20px;
-            margin-left: 33rem;
             text-align: left;
             margin-bottom: 3rem;
         }
 
+        & .titled {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+        }
+
         & .clickbutton {
-            margin-left: 33rem;
-            font-size: 25px;
+            font-size: 20px;
             padding: 10px 50px;
         }
     }
+    
+}
+
+@media screen and (min-width: 1920px) {
+
+    nav {
+        position: relative;
+        justify-content: right;
+        align-items: right;
+        margin-right: 40%;
+    }
+
+    nav img {
+        width: 350px;
+        margin-top: 13rem;
+        position: absolute;
+    }
+
+    main {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        padding-left: 20%;
+
+        & aside {
+            margin-top: 10%;    
+        }
+
+        & .titlea {
+            font-size: 35px;
+            text-align: left;
+        }
+
+        & .titleb {
+            font-size: 25.5px;
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        & .titlec {
+            font-size: 25.5px;
+            text-align: left;
+            margin-bottom: 3rem;
+        }
+
+        & .titled {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+        }
+
+        & .clickbutton {
+            font-size: 25.5px;
+            padding: 10px 50px;
+        }
+    }
+    
 }
